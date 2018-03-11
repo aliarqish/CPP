@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int c,f,startValue,stepSize,endValue;
+    cin>>startValue;
+    cin>>endValue;
+    cin>>stepSize;
+    f=startValue;
+    while(f<=endValue){
+            c=(5.0/9)*(f-32);
+            cout<<f<<" "<<c<<endl;
+            f=f+stepSize;
+
+    }
+    cout<<"\n";
+
+}
+
