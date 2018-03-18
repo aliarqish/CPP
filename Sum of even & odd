@@ -1,0 +1,22 @@
+int main(){
+    int num,rem,ldigit,soe=0,soo=0;
+
+    cin>>num;
+
+    while(num>0){
+    ldigit=num%10;
+    num=num/10;
+    rem=ldigit%2;
+
+    if(rem!=0){
+        soo=soo+ldigit;
+    }else{
+        soe=soe+ldigit;
+    }
+
+    }
+    cout<<soe<<" "<<soo<<endl;
+
+}
+
+
