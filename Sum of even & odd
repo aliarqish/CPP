@@ -1,3 +1,6 @@
+#include<iostream>
+using namespace std;
+
 int main(){
     int num,rem,ldigit,soe=0,soo=0;
 
