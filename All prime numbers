@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    /* Read input as specified in the question.
+	 * Print output as specified in the question.
+	 */
+  int N; 
+  cin>> N;
+  int prime;
+  if(N<0 || N>100)
+  {
+    return 0;
+  }
+  
+  for(int i=2;i<=N;i++)
+  {
+    prime = 0;
+    for(int j=2;j<=i/2;j++)
+    {
+      if(i%j ==0)
+      {
+        prime = 1;
+        break;
+      }
+
+    }
+      
+    if(prime == 0 && N!=1)
+    {
+		cout <<i<<endl;
+    }
+  }
+  return 0;
+}
