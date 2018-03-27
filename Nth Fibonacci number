@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+
+void Fibonacci(int N,int t1,int t2)
+{
+  t1 = 0,t2 = 1;
+  int nextTerm = 0;
+  
+  for(int i=1;i<=N;i++)
+  {
+    if(i == 1)
+    {	t1 = 1;
+      continue;
+    }
+    else if(i == 2)
+    {	t2 = 1;
+      continue;
+    }
+    nextTerm = t1 + t2;
+    t1 = t2;
+    t2 = nextTerm;
+  }
+  cout <<nextTerm <<endl;
+}
+int main(){
+
+       /*  Read input as specified in the question.
+	* Print output as specified in the question.
+	*/
+  int n;
+  int a= 0,b= 1,c = a+b;
+  cin >>n;
+  Fibonacci(n,a,b);
+ 
+  
+}
