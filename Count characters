@@ -1,0 +1,51 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    /* Read input as specified in the question.
+	 * Print output as specified in the question.
+	 */
+  #include<iostream>
+  using namespace std;
+  
+  char ch;
+  int alphabets = 0;
+  int whitespace = 0;
+  int number = 0,count1;
+  
+  cin >>ch;
+  while(ch != '$')
+  {
+    ++count1;
+    if(ch == ' ')
+    {
+      ++whitespace;
+    }
+    else if(ch == '\n')
+    {
+      ++whitespace;
+    }
+    else if(ch == '\t')
+    {
+      ++whitespace;
+    }
+    //alphabets//
+    if(ch >= 'a' && ch <= 'z')
+    {
+      ++alphabets;
+    }
+    else if(ch >= 'A' && ch <= 'Z')
+    {
+      ++alphabets;
+    }
+    //numbers//
+    if(ch >= '0' && ch <= '9')
+    {
+      ++number;
+    }
+    cin.get(ch);
+  }
+  
+  cout << alphabets<< " "<< number << " "<<whitespace<<endl;
+}
