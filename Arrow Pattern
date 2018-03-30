@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+
+int main(){
+
+  int row =1,N,space,col;
+  cin>>N;
+  while(row<=N/2+1)
+  {
+    space = 1;
+    while(space <= (row-1))
+    {
+      cout <<" ";
+      space = space+1;
+    }
+    int starcount = 1;
+    while(starcount <= row)
+    {
+      cout <<"* ";
+      starcount = starcount +1;
+    }
+    cout <<"\n";
+    row = row + 1;
+  }
+  for(row =(N+1)/2;row>=1;row--)
+  {
+    for(col = row-1;col>1;col--)
+    {
+		cout <<" ";
+    }
+    for(col = row;col>1;col--)
+    {
+		cout << "* ";
+    }
+    cout <<"\n";
+  }
+  return 0;
+}
