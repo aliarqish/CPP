@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int i,n,count,currentTerm;
+    cin>>count;
+    n=1;
+    i=0;
+    while(i<count){
+
+
+        currentTerm=((3*n)+2);
+        if(currentTerm%4!=0){
+            cout<<currentTerm<<" ";
+        }else{
+            count++;
+        }
+        i++;
+        n++;
+
+    }
+
+}
