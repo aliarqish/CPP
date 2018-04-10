@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    int prev,current;
+    cin>>prev;
+    int count=1;
+    bool isDec=true;
+
+    while(count<n){
+        cin>>current;
+        if(prev==current){
+                cout<<"false"<<endl;
+                return 0;
+        }else if(prev>current){
+                if(isDec==false){
+                        cout<<"false"<<endl;
+                return 0;
+                }
+
+                }else{
+                if(isDec==true){
+                    isDec=false;
+                }
+            }
+
+        prev=current;
+        count++;
+    }
+    cout<<"true"<<endl;
+
+
+}
+
+
