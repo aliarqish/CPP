@@ -1,22 +1,10 @@
-void printTable(int s, int e, int w) {
-    int f;
-    cin>>s;
-    cin>>e;
-    cin>>w;
-    f=s;
-    while(f<=e){
-            int c=(5.0/9)*(f-32);
-            cout<<f<<"\t"<<c<<endl;
-            f=f+w;
-
-    }
-    cout<<"\n";
-
+void printTable(int start, int end, int step) { 
+    int currentValue = start; 
+        while(currentValue <= end){ 
+        
+        int fahrenheitValue = (int)((5.0 / 9) * (currentValue - 32)); 
+        cout << currentValue << "\t" << fahrenheitValue << endl; 
+        currentValue += step; 
+        
+        } 
 }
-
-
-
-
-
-
-
