@@ -1,0 +1,22 @@
+void printTable(int s, int e, int w) {
+    int f;
+    cin>>s;
+    cin>>e;
+    cin>>w;
+    f=s;
+    while(f<=e){
+            int c=(5.0/9)*(f-32);
+            cout<<f<<"\t"<<c<<endl;
+            f=f+w;
+
+    }
+    cout<<"\n";
+
+}
+
+
+
+
+
+
+
