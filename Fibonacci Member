@@ -1,0 +1,20 @@
+bool checkMember(int n){
+    int a=0;
+    int b=1;
+    if(n==a||n==b){
+            return true;
+    }
+
+    int c=a+b;
+    while(c<n)
+    {
+      c=a+b;
+      a=b;
+      b=c;
+     if(c==n)
+     {
+        return true;
+     }
+    }
+    return false;
+}
