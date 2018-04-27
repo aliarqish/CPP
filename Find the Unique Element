@@ -12,4 +12,4 @@ int FindUnique(int arr[], int size){
       return arr[i];
     }
   }
-        
+}     
