@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+void pairSum(int input[], int size, int x) {
+   int i,j;
+   for(i=0;i<size;i++){
+     for(j=i+1;j<size;j++){
+    if(input[i]+input[j]==x){
+        if(input[i]>input[j]){
+            cout<<input[j]<<" "<<input[i]<<"\n";
+        }else{
+                 cout<<input[i]<<" "<<input[j]<<"\n";
+        }
+    }
+   }
+ }
+ }
