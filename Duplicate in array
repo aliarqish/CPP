@@ -1,0 +1,14 @@
+int MissingNumber(int *input, int size){ 
+    // Sum of all elements in the array long 
+    
+    long sum = 0; 
+     for(int i = 0; i < size; i++) 
+      sum += input[i]; 
+    int n = size; 
+    
+    // Sum of all natural numbers from 0 to N - 2, as array contains till N - 2 
+    int sumOfNaturalNumbers = ((n - 1) * (n - 2)) / 2; 
+    
+    // Subtract them to get the missing number 
+    return sum - sumOfNaturalNumbers ; 
+    }
