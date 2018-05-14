@@ -1,9 +1,5 @@
 void Rotate(int arr[], int d, int size) {
-    /* Don't write main().
-     * Don't read input, it is passed as function argument.
-     * No need to print or return the output.
-     * Taking input and printing the output is handled automatically.
-     */
+    
 int i,count=0;
      int ans[size];
      for(i=0;i<size;i++){
