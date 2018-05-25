@@ -1,0 +1,16 @@
+#include<string.h>
+#include<cstring>
+void trimSpaces(char input[]) {
+  
+  int i=0,j=0;
+  int length=strlen(input);
+    while(i<length){
+        if(input[i]!=' '){
+            input[j]=input[i];
+            j++;
+        }
+        i++;
+    }
+  input[j]='\0';
+
+}
