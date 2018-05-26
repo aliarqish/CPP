@@ -1,0 +1,25 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+void substring(char input[],int start,int end){
+
+        for(int j=start;j<=end;j++){
+            cout<<input[j];
+        }
+}
+
+void printSubstrings(char str[]){
+  
+    int start=0,end;
+    int length=strlen(str);
+    while(start<length){
+            end=start;
+        while(end<length){
+            substring(str,start,end);
+            cout<<endl;
+            end++;
+        }
+        start++;
+    }
+    }
