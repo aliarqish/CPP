@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+void spiralPrint(int arr[][1000], int row, int col){
+	int startrow=0,startcol=0,endrow=row-1,endcol=col-1,count=0;
+    while(count<row*col) {
+        for(int j=startcol; j<=endcol; j++) {
+            cout << arr[startrow][j] << " "; count++;
+        }
+        startrow++;
+        for(int a=startrow; a<=endrow; a++) {
+            cout << arr[a][endcol] << " "; count++;
+        }
+        endcol--;
+        for(int a=endcol; a>=startcol; a--) {
+           cout << arr[endrow][a] << " "; count++;
+        }
+        endrow--;
+        for(int a=endrow; a>=startrow; a--) {
+           cout << arr[a][startcol] << " "; count++;
+        }
+        startcol++;
+    }
+
+}
