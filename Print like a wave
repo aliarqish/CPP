@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void wavePrint(int input[][1000], int row, int col){
+void wavePrint(int input[1000][1000], int row, int col){
 	
   int i,j;
     for(j=0;j<col;j++){
