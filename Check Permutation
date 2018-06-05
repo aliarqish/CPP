@@ -1,0 +1,25 @@
+#include<string.h>
+// input1 - first input string
+// input2 - second input string
+bool isPermutation(char input1[], char input2[]) {
+    // Write your code here
+ int i,j,l1,l2;
+    int flag=0;
+    l1=strlen(input1);
+    l2=strlen(input2);
+
+    for(i=0;i<l1;i++){
+        for(j=0;j<l2;j++){
+            if(input1[i]!=input2[j]){
+                flag=1;
+            }else{
+                flag=0;
+            }
+        }
+    }
+    if(flag==1 && l1==l2){
+            return 1;
+    }else{
+            return 0;
+    }
+}
