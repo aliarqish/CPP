@@ -1,6 +1,3 @@
-// input - given string
-// Update in the given input itself. No need to return or print anything
-
 void reverse(char* input,char* end)
 {
 	char temp;
@@ -15,11 +12,9 @@ void reverse(char* input,char* end)
 
 
 void reverseEachWord(char* input) {
-    // Write your code here
 char* word_begin = input;
 	char* temp = input;
 
-	// int length = strlen(input);
 
 	while(*temp)
 	{
@@ -35,14 +30,6 @@ char* word_begin = input;
 		}
 	}
 }
-
-//void reverseStringWordWise(char* input) {
-    // Write your code here
-
-//	reverse(input,temp-1);
-
-
-//}
 
 
 
