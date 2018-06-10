@@ -1,0 +1,13 @@
+#include<string.h>
+void convertStringToLowerCase(char input[]) {
+    // Write your code here
+int i=0;
+        int length=strlen(input);
+    for(i=0;i<length;i++){
+        if(input[i]>='a' && input[i]<='z')
+            input[i]-=32;
+
+        else if(input[i]>='A' && input[i]<='Z')
+            input[i]+=32;
+    }
+}
