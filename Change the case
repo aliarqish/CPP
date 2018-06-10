@@ -1,3 +1,4 @@
+#include<stdio.h>
 #include<string.h>
 void convertStringToLowerCase(char input[]) {
     // Write your code here
