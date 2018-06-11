@@ -1,0 +1,21 @@
+#include<string.h>
+void rotateStringByNChars(char input[], int n) {
+   // Write your code here
+    int length=strlen(input);
+    char temp[length];
+    int i=0,j=0;;
+
+    for(i=0;i<length;i++){
+        temp[i]=input[i];
+    }
+
+    for(i=length-n;i<length;i++){
+        input[j]=input[i];
+            j++;
+    }
+
+    for(i=0;i<length-n;i++){
+        input[j]=temp[i];
+        j++;
+    }
+}
